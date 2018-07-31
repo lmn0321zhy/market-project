@@ -43,7 +43,7 @@
     <plugins>
         <!--<plugin interceptor="cn.wenwuyun.common.persistence.interceptor.PaginationInterceptor"/>-->
         <!--sql性能统计,正式环境需屏蔽-->
-        <plugin interceptor="com.lmn.common.interceptor.PerformanceInterceptor"/>
+        <plugin interceptor="com.lmn.interceptor.PerformanceInterceptor"/>
         <plugin interceptor="com.github.pagehelper.PageHelper">
             <!-- 该参数默认为false -->
             <!-- 设置为true时，会将RowBounds第一个参数offset当成pageNum页码使用 -->

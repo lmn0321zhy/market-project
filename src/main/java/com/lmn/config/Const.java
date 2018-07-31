@@ -6,14 +6,16 @@ package com.lmn.config;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.github.pagehelper.Dialect;
-import com.lmn.common.utils.SpringContextHolder;
-import com.lmn.common.utils.StringUtils;
+import com.lmn.utils.SpringContextHolder;
+import com.lmn.utils.StringUtils;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.DefaultResourceLoader;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
+
+
 
 /**
  * 全局配置类

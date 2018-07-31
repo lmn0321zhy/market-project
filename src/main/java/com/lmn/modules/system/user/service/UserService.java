@@ -1,4 +1,4 @@
-package com.lmn.modules.common.service;
+package com.lmn.modules.system.user.service;
 
 import java.util.List;
 

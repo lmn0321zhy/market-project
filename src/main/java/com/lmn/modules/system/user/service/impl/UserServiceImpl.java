@@ -1,17 +1,19 @@
-package com.lmn.modules.common.service.impl;
+package com.lmn.modules.system.user.service.impl;
 
-import com.lmn.modules.common.dao.UserMapper;
-import com.lmn.modules.common.service.UserService;
+import com.lmn.modules.system.user.dao.UserMapper;
+import com.lmn.modules.system.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+
 /**
  * Created by Administrator on 2018/7/30.
  */
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 

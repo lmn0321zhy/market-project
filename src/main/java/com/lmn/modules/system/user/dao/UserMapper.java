@@ -1,4 +1,4 @@
-package com.lmn.modules.common.dao;
+package com.lmn.modules.system.user.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 

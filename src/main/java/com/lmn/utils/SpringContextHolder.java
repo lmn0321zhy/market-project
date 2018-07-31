@@ -1,4 +1,4 @@
-package com.lmn.common.utils;
+package com.lmn.utils;
 
 /**
  * Created by Administrator on 2018/7/29.

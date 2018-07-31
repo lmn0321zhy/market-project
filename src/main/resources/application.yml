@@ -26,7 +26,6 @@ spring:
 #    password: wenwuyun
 #    port: 6379
   datasource:
-
     name: wenwuyun
     url: jdbc:mysql://localhost:3306/monitor_production?useUnicode=true&characterEncoding=utf-8
 #    url: jdbc:mysql://192.168.16.95:3306/monitor_production?useUnicode=true&characterEncoding=utf-8

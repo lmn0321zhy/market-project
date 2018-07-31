@@ -1,4 +1,4 @@
-package com.lmn.common.utils;
+package com.lmn.utils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.PrintWriter;

@@ -1,6 +1,7 @@
-package com.lmn.modules.common.web;
+package com.lmn.modules.system.user.web;
 
-import com.lmn.modules.common.service.UserService;
+
+import com.lmn.modules.system.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

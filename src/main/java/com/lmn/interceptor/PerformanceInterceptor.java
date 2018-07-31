@@ -1,4 +1,4 @@
-package com.lmn.common.interceptor;
+package com.lmn.interceptor;
 
 import com.lmn.config.Const;
 import org.apache.ibatis.executor.Executor;
