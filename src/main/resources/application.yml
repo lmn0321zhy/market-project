@@ -11,22 +11,23 @@ urlSuffix: .html
 
 
 server:
-    port: 8080
+    port: 8088
     tomcat.uri-encoding: UTF-8
     compression:
       enabled: true
       min-response-size: 1
 
 
+
 spring:
-  profiles: dev
+#  profiles: dev
 #  redis:
 #    keyPrefix: wenwuyun
 #    host: 127.0.0.1
 #    password: wenwuyun
 #    port: 6379
   datasource:
-    name: wenwuyun
+#    name: wenwuyun
     url: jdbc:mysql://localhost:3306/monitor_production?useUnicode=true&characterEncoding=utf-8
 #    url: jdbc:mysql://192.168.16.95:3306/monitor_production?useUnicode=true&characterEncoding=utf-8
     username: root
@@ -34,19 +35,18 @@ spring:
     password: sfiroot
     driver-class-name: com.mysql.jdbc.Driver
 
-    type: org.apache.tomcat.jdbc.pool.DataSource
-    initialSize: 1
-    maxActive: 5
-    maxIdle: 5
-    minIdle: 1
-    suspectTimeout: 60
-    timeBetweenEvictionRunsMillis: 30000
-    minEvictableIdleTimeMillis: 60000
-    validationQuery: SELECT 1 FROM DUAL
-    testOnBorrow: true
-
+#    type: org.apache.tomcat.jdbc.pool.DataSource
+#    initialSize: 1
+#    maxActive: 5
+#    maxIdle: 5
+#    minIdle: 1
+#    suspectTimeout: 60
+#    timeBetweenEvictionRunsMillis: 30000
+#    minEvictableIdleTimeMillis: 60000
+#    validationQuery: SELECT 1 FROM DUAL
+#    testOnBorrow: true
 
 mybatis:
   configLocation: classpath:mybatis-config.xml
-  typeAliasesPackage: cn.lmn
-  mapperLocations: classpath*:/mapper/modules/**/*.xml
+  typeAliasesPackage: com.lmn
+  mapperLocations: classpath*:/mapper/**/*.xml
