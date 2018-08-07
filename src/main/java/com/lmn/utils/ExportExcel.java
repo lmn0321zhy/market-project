@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import com.lmn.utils.annotation.ExcelField;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
 import org.apache.poi.xssf.usermodel.XSSFRichTextString;
@@ -384,9 +385,9 @@ public class ExportExcel {
                         }
                     }
                     // If is dict, get dict label
-                    if (StringUtils.isNotBlank(ef.dictType())) {
-                        val = DictUtils.getDictLabel(val == null ? "" : val.toString(), ef.dictType(), "");
-                    }
+//                    if (StringUtils.isNotBlank(ef.dictType())) {
+//                        val = DictUtils.getDictLabel(val == null ? "" : val.toString(), ef.dictType(), "");
+//                    }
                 } catch (Exception ex) {
                     // Failure to ignore
                     log.info(ex.toString());

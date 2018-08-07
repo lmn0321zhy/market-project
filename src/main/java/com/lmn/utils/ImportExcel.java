@@ -125,7 +125,9 @@ public class ImportExcel {
             this.wb = new HSSFWorkbook(is);
         } else if (fileName.toLowerCase().endsWith("xlsx")) {
             this.wb = new XSSFWorkbook(is);
-        } else {
+        } else if (fileName.toLowerCase().endsWith("csv")) {
+            this.wb = new XSSFWorkbook(is);
+        }else {
             throw new RuntimeException("文档格式不正确!");
         }
         if (this.wb.getNumberOfSheets() < sheetIndex) {
@@ -281,10 +283,10 @@ public class ImportExcel {
                 if (val != null) {
                     ExcelField ef = (ExcelField) os[0];
                     // If is dict type, get dict value
-                    if (StringUtils.isNotBlank(ef.dictType())) {
-                        val = DictUtils.getDictValue(val.toString(), ef.dictType(), "");
-                        //log.debug("Dictionary type value: ["+i+","+colunm+"] " + val);
-                    }
+//                    if (StringUtils.isNotBlank(ef.dictType())) {
+//                        val = DictUtils.getDictValue(val.toString(), ef.dictType(), "");
+//                        //log.debug("Dictionary type value: ["+i+","+colunm+"] " + val);
+//                    }
                     // Get param type and type cast
                     Class<?> valType = Class.class;
                     if (os[1] instanceof Field) {
